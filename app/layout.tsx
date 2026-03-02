@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     description: BRAND.tagline,
     type: 'website',
     url: `https://${INTEGRATIONS.domain}`,
+    images: [
+      {
+        url: `https://${INTEGRATIONS.domain}/gtlogo/Gloteemlogo.png`,
+        width: 800,
+        height: 600,
+        alt: 'Gloteem Consulting',
+      },
+    ],
   },
 };
 
