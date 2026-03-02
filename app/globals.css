@@ -159,6 +159,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Nav height offset for hero */
+.hero-section {
+  margin-top: 76px;
+}
+@media (max-width: 767px) {
+  .hero-section {
+    margin-top: 104px;
+  }
+}
+
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

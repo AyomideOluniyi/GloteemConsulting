@@ -22,6 +22,7 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section
+      className="hero-section"
       style={{
         position: 'relative',
         width: '100%',
@@ -29,7 +30,6 @@ export default function Hero({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: '76px',
         backgroundImage: `linear-gradient(rgba(12, 20, 40, 0.78), rgba(12, 20, 40, 0.78)), url('${backgroundImage}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
