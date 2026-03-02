@@ -11,13 +11,13 @@ import { INTEGRATIONS, BRAND } from '@/config/integrations';
 export default function Home() {
   const heroButtons = [
     {
-      label: 'Book a Consultation',
+      label: 'Book a Strategy Consultation',
       href: INTEGRATIONS.calendly.url,
       variant: 'primary' as const,
       target: '_blank',
     },
     {
-      label: 'Explore Services',
+      label: 'Explore Our Services',
       href: '#services',
       variant: 'secondary' as const,
     },
@@ -27,19 +27,25 @@ export default function Home() {
     <main>
       {/* HERO */}
       <Hero
-        headline={BRAND.tagline}
-        subheadline="Cross-sector leadership consultancy spanning corporate, care, and start-up environments."
+        headline="Building Confident Leaders and Strengthening Organisations with Purpose"
+        subheadline="Gloteem Consulting is a leadership and organisational development consultancy supporting emerging leaders, founders, small and medium enterprises, and healthcare organisations. We combine strategic advisory, operational structure and compassionate leadership development to help you build sustainable systems that deliver service excellence."
         ctaButtons={heroButtons}
       />
 
       {/* POSITIONING STATEMENT */}
       <section className="section-white section-padding">
         <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ color: '#E07B39', fontWeight: '600', fontSize: '0.8rem', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+            Where Strategy Meets Heart
+          </p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.15rem', lineHeight: '1.8', color: '#444' }}>
-            Gloteem Consulting partners with leaders, organisations and care providers to build capability,
-            drive performance and create lasting impact. Founded by{' '}
-            <strong style={{ color: '#1B2A4A' }}>Glory Adebanjo-Taiwo</strong> — servant leader, HR professional,
-            and author — Gloteem brings over two decades of cross-sector experience to every engagement.
+            Leadership and organisational growth can feel complex, particularly within regulated or rapidly evolving sectors.
+            At Gloteem Consulting, we provide structured leadership development, organisational advisory and healthcare consultancy
+            services designed to bring clarity, alignment and measurable improvement.
+          </p>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.15rem', lineHeight: '1.8', color: '#444', marginTop: '1rem' }}>
+            We support organisations transitioning from reactive management to intentional leadership by strengthening systems,
+            improving service delivery frameworks and designing scalable operational structures.
           </p>
         </div>
       </section>
@@ -180,10 +186,10 @@ export default function Home() {
               lineHeight: '1.2',
             }}
           >
-            Ready to Build Something That Lasts?
+            Ready to Strengthen Your Leadership and Organisational Systems?
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.1rem', marginBottom: '2.5rem', lineHeight: '1.7' }}>
-            Whether you lead a team, run an organisation, or are stepping into leadership for the first time — let's talk.
+            Book a leadership strategy consultation today and begin building a structured, sustainable future for your organisation.
           </p>
           <a
             href={INTEGRATIONS.calendly.url}
@@ -201,7 +207,7 @@ export default function Home() {
               boxShadow: '0 4px 20px rgba(224,123,57,0.4)',
             }}
           >
-            Book a Free Consultation
+            Book a Strategy Consultation
           </a>
         </div>
       </section>

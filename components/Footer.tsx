@@ -27,7 +27,7 @@ export default function Footer() {
                 alt={BRAND.name}
                 width={300}
                 height={120}
-                style={{ objectFit: 'contain', height: '160px', width: 'auto', filter: 'brightness(0) invert(1)' }}
+                style={{ objectFit: 'contain', height: '80px', width: 'auto', borderRadius: '6px' }}
               />
             </div>
             <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', lineHeight: '1.7', maxWidth: '260px', marginBottom: '1.25rem' }}>

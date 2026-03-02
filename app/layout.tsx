@@ -5,16 +5,16 @@ import Footer from '@/components/Footer';
 import { BRAND, INTEGRATIONS } from '@/config/integrations';
 
 export const metadata: Metadata = {
-  title: `${BRAND.name} | Leadership & Organisational Consulting`,
+  title: `Leadership and Organisational Development Consultancy | ${BRAND.name}`,
   description:
-    'Cross-sector leadership consultancy spanning corporate, care, and start-up environments. Led by Glory Adebanjo-Taiwo.',
+    'Gloteem Consulting provides leadership development, organisational strategy and healthcare consultancy services for growing businesses and care providers.',
   keywords: [
-    'leadership consulting',
-    'organisational development',
-    'care consultancy',
-    'servant leadership',
-    'coaching',
-    'UK',
+    'leadership development consultancy',
+    'organisational development consultant',
+    'healthcare consultancy services',
+    'care advisory',
+    'operational strategy',
+    'start-up business structure support',
   ],
   icons: {
     icon: '/gtlogo/Gloteemlogo.png',

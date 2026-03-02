@@ -2,22 +2,18 @@ export const aboutContent = {
   name: 'Glory Adebanjo-Taiwo',
   subheading: 'Servant Leader. HR Professional. Author. Consultant.',
 
-  biography: `Glory Adebanjo-Taiwo is a servant leader and a people-focused professional with cross-sector experience spanning banking, healthcare consultancy, customer support, and project delivery across Nigeria and the United Kingdom.
+  biography: `Glory is a leadership and organisational development consultant with professional experience spanning corporate banking, healthcare consultancy and operational transformation.
 
-Across her career, Glory has led high-performing teams, supported organisational change, improved customer support outcomes and mentored professionals across cultures and sectors. The Leadership Bridge reflects her belief that when leaders serve people well, trust grows, performance improves, and lasting impact follows.
-
-Glory lives in the United Kingdom with her husband and three children and is passionate about empowering leaders to create environments where people thrive and organisations succeed.`,
+She specialises in leadership development, organisational structure design, customer support system development and healthcare advisory services. Her approach blends strategic thinking with practical implementation, ensuring organisations design effective strategies and execute them successfully.`,
 
   credentials: [
-    'BA (Hons) in Mass Communication',
-    'Master\'s Degree in Human Resources',
-    'Associate Member, Chartered Institute of Personnel Management (CIPM), Nigeria',
-    'APMG International — Change Management',
-    'APMG International — AgilePM',
-    'APMG International — Project Management Fundamentals',
-    'CPD Level 3 — Leadership and Management',
-    'CPD Level 3, 4, and 5 — Health and Social Care',
+    'Bachelor of Arts in Mass Communication',
+    'Masters in Human Resources',
+    'Associate Member, Chartered Institute of Personnel Management of Nigeria',
+    'Chartered Institute of Personnel and Development assessment in progress',
+    'Level 5 Diploma in Health and Social Care Leadership and Management',
+    'Agile Project Management, Change Management and Project Management Fundamentals (APMG International)',
   ],
 
-  credentialsNote: 'Chartered Institute of Personnel and Development (CIPD) assessment in progress',
+  credentialsNote: '',
 };

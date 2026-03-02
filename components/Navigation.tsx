@@ -66,7 +66,7 @@ export default function Navigation() {
               alt="Gloteem Consulting"
               width={300}
               height={120}
-              style={{ objectFit: 'contain', height: '200px', width: 'auto', filter: 'brightness(0) invert(1)' }}
+              style={{ objectFit: 'contain', height: '56px', width: 'auto', borderRadius: '6px' }}
               priority
             />
           </Link>

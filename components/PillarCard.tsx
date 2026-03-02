@@ -34,8 +34,6 @@ export default function PillarCard({ pillar, minimal = false }: PillarCardProps)
           padding: '2.5rem 2rem',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          textAlign: 'center',
           boxShadow: '0 2px 12px rgba(27,42,74,0.08)',
           border: '1px solid rgba(201,168,76,0.15)',
           transition: 'transform 0.25s ease, box-shadow 0.25s ease',
@@ -54,9 +52,22 @@ export default function PillarCard({ pillar, minimal = false }: PillarCardProps)
         >
           {pillar.name}
         </h3>
-        <p style={{ color: '#555', fontSize: '0.9rem', lineHeight: '1.65', marginBottom: '1.25rem', flexGrow: 1 }}>
+        <p style={{ color: '#555', fontSize: '0.9rem', lineHeight: '1.65', marginBottom: '1rem' }}>
           {pillar.shortDescription}
         </p>
+        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 1rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', flexGrow: 1 }}>
+          {pillar.servicesIncluded.map((s, i) => (
+            <li key={i} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start', color: '#444', fontSize: '0.875rem', lineHeight: '1.5' }}>
+              <span style={{ color: '#C9A84C', fontWeight: '700', flexShrink: 0, marginTop: '1px' }}>•</span>
+              {s}
+            </li>
+          ))}
+        </ul>
+        {pillar.keyOutcomes[0] && (
+          <p style={{ color: '#1B2A4A', fontSize: '0.85rem', fontStyle: 'italic', borderTop: '1px solid rgba(201,168,76,0.2)', paddingTop: '0.75rem', marginBottom: '1rem', lineHeight: '1.55' }}>
+            <strong>Outcome:</strong> {pillar.keyOutcomes[0]}
+          </p>
+        )}
         <Link
           href={`/services#${pillar.id}`}
           style={{ color: '#C9A84C', fontWeight: '600', fontSize: '0.875rem', textDecoration: 'none' }}

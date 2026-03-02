@@ -1,8 +1,12 @@
-'use client';
-
+import { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import ContactForm from '@/components/ContactForm';
 import { INTEGRATIONS } from '@/config/integrations';
+
+export const metadata: Metadata = {
+  title: 'Book a Leadership Strategy Consultation | Gloteem Consulting',
+  description: 'Book a strategy consultation with Gloteem Consulting to strengthen leadership, organisational systems and service excellence.',
+};
 
 const socialLinks = [
   { label: 'LinkedIn', href: INTEGRATIONS.social.linkedin, icon: (

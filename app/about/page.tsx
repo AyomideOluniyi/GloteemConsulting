@@ -4,8 +4,8 @@ import { aboutContent } from '@/content/about';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Glory Adebanjo-Taiwo | Gloteem Consulting',
-  description: 'Servant leader, HR professional, author and cross-sector consultant with over two decades of experience.',
+  title: 'About Glory | Leadership and Healthcare Consultant | Gloteem Consulting',
+  description: 'Meet Glory, a leadership and organisational development consultant specialising in healthcare advisory, operational structure and strategic growth.',
 };
 
 export default function AboutPage() {
@@ -91,11 +91,6 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <div style={{ backgroundColor: 'white', borderLeft: '4px solid #C9A84C', padding: '1.25rem 1.5rem', borderRadius: '0 8px 8px 0', boxShadow: '0 1px 4px rgba(0,0,0,0.05)' }}>
-            <p style={{ color: '#666', fontSize: '0.875rem', fontStyle: 'italic', margin: 0 }}>
-              {aboutContent.credentialsNote}
-            </p>
-          </div>
         </div>
       </section>
 

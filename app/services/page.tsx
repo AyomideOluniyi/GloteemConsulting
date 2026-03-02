@@ -5,8 +5,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Services | Gloteem Consulting',
-  description: 'Leadership development, organisational strategy, care consultancy, and start-up advisory services.',
+  title: 'Leadership Development, Healthcare Consultancy and Business Structure Advisory',
+  description: 'Explore leadership coaching, start-up structure advisory and healthcare consultancy services designed to strengthen systems and improve organisational performance.',
 };
 
 export default function ServicesPage() {
