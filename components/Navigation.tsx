@@ -84,10 +84,10 @@ export default function Navigation() {
             style={{
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-between',
+              justifyContent: 'space-around',
               borderTop: '1px solid rgba(201,168,76,0.2)',
-              paddingTop: '10px',
-              paddingBottom: '12px',
+              paddingTop: '8px',
+              paddingBottom: '10px',
             }}
           >
             {NAV_LINKS.map((link) => {
@@ -97,13 +97,14 @@ export default function Navigation() {
                   key={link.href}
                   href={link.href}
                   style={{
-                    color: isActive ? '#C9A84C' : 'rgba(255,255,255,0.82)',
+                    color: isActive ? '#C9A84C' : 'rgba(255,255,255,0.75)',
                     textDecoration: 'none',
-                    fontSize: '0.78rem',
-                    fontWeight: isActive ? '700' : '500',
-                    letterSpacing: '0.01em',
-                    paddingBottom: '2px',
+                    fontSize: '0.76rem',
+                    fontWeight: isActive ? '700' : '400',
+                    letterSpacing: '0.02em',
+                    paddingBottom: '3px',
                     borderBottom: isActive ? '2px solid #C9A84C' : '2px solid transparent',
+                    padding: '4px 2px',
                   }}
                 >
                   {link.label}

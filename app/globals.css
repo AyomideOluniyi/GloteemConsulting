@@ -169,6 +169,49 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ── Mobile UI polish ── */
+@media (max-width: 640px) {
+
+  /* Hero CTA buttons: full-width stacked */
+  .hero-cta-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .hero-cta-row a {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+
+  /* Tighter heading padding in sections */
+  h1, h2 {
+    word-break: break-word;
+  }
+
+  /* Footer: centre-align on mobile */
+  footer .footer-brand {
+    text-align: center;
+  }
+  footer .footer-brand img {
+    margin: 0 auto;
+  }
+  footer .footer-social {
+    justify-content: center;
+  }
+
+  /* Book section: reduce gap */
+  .book-grid {
+    gap: 2rem !important;
+  }
+
+  /* CTA sections: tighter padding */
+  .cta-section {
+    padding: 3.5rem 1.25rem !important;
+  }
+}
+
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

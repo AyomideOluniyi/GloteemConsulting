@@ -75,7 +75,7 @@ export default function Hero({
         </p>
 
         {ctaButtons && ctaButtons.length > 0 && (
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
+          <div className="hero-cta-row" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
             {ctaButtons.map((btn, idx) =>
               btn.variant === 'primary' ? (
                 <a

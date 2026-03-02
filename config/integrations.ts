@@ -31,4 +31,5 @@ export const BRAND = {
   name: 'Gloteem Consulting',
   founder: 'Glory Adebanjo-Taiwo',
   tagline: 'Gloteem Consulting provides leadership development, organisational strategy and healthcare consultancy services for growing businesses and care providers.',
+  shortTagline: 'Leadership development, organisational strategy and healthcare consultancy.',
 };

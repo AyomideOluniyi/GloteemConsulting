@@ -174,7 +174,7 @@ export default function Home() {
       <div className="divider-gold" />
 
       {/* CLOSING CTA */}
-      <section style={{ backgroundColor: '#1B2A4A', padding: '6rem 2rem', textAlign: 'center' }}>
+      <section className="cta-section" style={{ backgroundColor: '#1B2A4A', padding: '6rem 2rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '680px', margin: '0 auto' }}>
           <h2
             style={{

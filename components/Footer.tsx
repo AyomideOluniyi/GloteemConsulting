@@ -20,7 +20,7 @@ export default function Footer() {
         }}>
 
           {/* Brand + Social */}
-          <div>
+          <div className="footer-brand">
             <div style={{ marginBottom: '0.75rem' }}>
               <Image
                 src="/gtlogo/Gloteemlogo.png"
@@ -31,11 +31,11 @@ export default function Footer() {
               />
             </div>
             <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', lineHeight: '1.7', maxWidth: '260px', marginBottom: '1.25rem' }}>
-              {BRAND.tagline}
+              {BRAND.shortTagline}
             </p>
 
             {/* Social icons */}
-            <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
+            <div className="footer-social" style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
               {/* LinkedIn */}
               <a href={INTEGRATIONS.social.linkedin} target="_blank" rel="noopener noreferrer"
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '38px', height: '38px', backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: '8px', color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}
