@@ -15,7 +15,7 @@ export const INTEGRATIONS = {
     bookUrl: 'https://www.amazon.co.uk/gp/aw/d/B0GK2LWNS1',
   },
   email: {
-    contact: 'enquiry@gloteemconsulting.com',
+    contact: 'glory@gloteemconsulting.com',
     personal: 'gloryadebanjo21@gmail.com',
   },
   social: {
