@@ -4,6 +4,7 @@ import { INTEGRATIONS } from '@/config/integrations';
 
 export async function POST(request: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
+  console.log('API key present:', !!process.env.RESEND_API_KEY);
   try {
     const body = await request.json();
     const { fullName, email, organisation, enquiryType, message } = body;
@@ -16,7 +17,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send notification email to Glory
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: 'Gloteem Consulting <onboarding@resend.dev>',
       to: INTEGRATIONS.email.contact,
       replyTo: email,
@@ -42,6 +43,8 @@ export async function POST(request: NextRequest) {
         </div>
       `,
     });
+
+    console.log('Notification email result:', JSON.stringify(result));
 
     // Send auto-reply to sender
     await resend.emails.send({
