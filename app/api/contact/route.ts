@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
 
     // Send notification email to Glory
     await resend.emails.send({
-      from: 'Gloteem Consulting <noreply@gloteemconsulting.com>',
+      from: 'Gloteem Consulting <onboarding@resend.dev>',
       to: INTEGRATIONS.email.contact,
       replyTo: email,
       subject: `New Enquiry: ${enquiryType} — ${fullName}`,
@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
 
     // Send auto-reply to sender
     await resend.emails.send({
-      from: 'Gloteem Consulting <noreply@gloteemconsulting.com>',
+      from: 'Gloteem Consulting <onboarding@resend.dev>',
       to: email,
       subject: 'Thank you for reaching out — Gloteem Consulting',
       html: `
